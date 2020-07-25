@@ -1,0 +1,650 @@
+
+/* --------------------------------------------*/
+/*                   COMUNES                   */
+/* --------------------------------------------*/
+
+body{ 
+	margin: 0px; 
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Noto Serif', sans-serif;
+}
+
+#principal{
+    width:75%;
+    margin: 30px 0% 30px 2%;
+    padding-right: 2%;
+    display: inline-block;
+  /*  border-right: 1px solid #DCAE06; */
+}
+
+#sidebar{
+    width: 18%;
+    margin: 30px 2%;
+    margin-left: 0%;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+#sidebar .widget{padding-bottom: 35px;}
+
+/* Envoltorio máximo de la página */
+.fullwrapper{
+    max-width: 1300px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Botones */
+.boton{
+    color: #131313;
+    border: 1px solid #9C9C9C;
+    padding: 6px 15%;
+    background: #FDFDFD;
+    padding-bottom: 8px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+    margin: 16px 0px;
+    transition: ease 0.4s;
+}
+.boton:hover{
+    border: 1px solid #dbba01;
+    background: #fafafa;
+    color:#2c2c2c;
+}
+
+h2{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    border-bottom: 2px solid #DCAE06;
+    padding-bottom: 19px;
+    margin-bottom: 19px;
+    display: block;
+    font-size: 25px;
+    color: #1F1F1F;
+    letter-spacing: 0.2px;
+}
+
+h3{
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+    border-bottom: 2px solid #AFAFAF;
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    margin-top: 15px;
+    display: block;
+    font-size: 22px;
+    color: #1F1F1F;
+    letter-spacing: 0.2px;
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {content: " "; display: table;}
+.cf:after {clear: both;}
+.cf {*zoom: 1;}
+
+
+/* --------------------------------------------*/
+/*                   HEADER                    */
+/* --------------------------------------------*/
+
+#topbar{background: #171717;}
+
+#topbar #logo {width: 100%; text-align: center;}
+#topbar #logo img{width: 190px; margin-top: 10px; transition: ease 0.4s;}
+
+#topbar #menu{display: block; width: 100%;}
+
+#topbar #menu ul{
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    font-size: 16px;
+    height: 55px;
+    margin-top: 13px;
+    margin-bottom: 0px;
+}
+#topbar #menu li{
+    display: inline-block;
+    margin-left: 17px;
+    color: whitesmoke;
+    transition: ease 0.3s;
+    height: 100%;
+}
+
+#topbar #menu li a{text-decoration:none; color: whitesmoke; height: 100%}
+
+#topbar #menu .separador{
+    color: #F1B202;
+    margin-left: 15px;
+    display: inline-block;
+    width: 2px;
+    height: 1px;
+    margin-top: 2px;
+    transition: ease 0.3s;
+}
+
+#topbar #menu li:after{
+    border-top: 2px solid #F1B202;
+    content: ' ';
+    margin: 0 auto;
+    display: block;
+    width: 0;
+    height: 1px;
+    margin-top: 3px;
+    transition: ease 0.3s;
+}
+
+#topbar #menu li:hover:after{width: 100%;}
+#topbar #menu li:hover{color: white;}
+
+ul.submenu {
+    float: left;
+    background: #2B2B2B none repeat scroll 0% 0%;
+    width: 100% !important;
+    height: 50px !important;
+    padding-top: 20px !important;
+    margin-top: 13px !important;
+    display: none !important;
+    position: absolute;
+    left: 0;
+}
+
+.superior_menu:hover .submenu,
+.submenu:hover{display: block !important;}
+
+
+#topbar #menu li.sec_actual a{color: #E7AB02;}
+
+/* --------------------------------------------*/
+/*                   FOOTER                    */
+/* --------------------------------------------*/
+
+#footer{background: #171717; color: white; padding: 50px 0px;}
+#footer a {text-decoration: none; color: white;}
+
+#footer .contactinfo img{
+    display: block;
+    width: 235px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+#footer .contactinfo p{
+    margin: 0 0;
+    margin-bottom: 25px;
+}
+
+#footer .contactinfo{
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 13px;
+}
+#footer .contactinfo .text{border-top: 1px solid #DCAE06; padding-top: 25px;}
+
+
+#footer .redessociales{display: block; width: 100%;}
+
+#footer .redessociales ul{
+    margin:0;
+    list-style: none;
+    margin-top: 15px;
+    padding: 0;
+    padding-top: 15px;
+}
+#footer .redessociales ul li{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+    background-size: cover;
+    margin: 0px 10px;
+    transition: ease 0.3s;
+}
+#footer .redessociales ul li.tw{background-image: url('img/twicono.png');}
+#footer .redessociales ul li.fb{background-image: url('img/fbicono.png');}
+#footer .redessociales ul li.gplus{background-image: url('img/gplusicono.png');}
+#footer .redessociales ul li.booking{background-image: url('img/bookingicono.png');}
+
+#footer .redessociales ul li.tw:hover{background-image: url('img/twiconohover.png');}
+#footer .redessociales ul li.fb:hover{background-image: url('img/fbiconohover.png');}
+#footer .redessociales ul li.gplus:hover{background-image: url('img/gplusiconohover.png');}
+#footer .redessociales ul li.booking:hover{background-image: url('img/bookingiconohover.png');}
+
+
+/* --------------------------------------------*/
+/*                   SIDEBAR                   */
+/* --------------------------------------------*/
+
+.sidebar{background: #F7F7F7; padding: 30px 0px;}
+.sidebar ul{padding: 0 0;}
+
+.sidebar .widget h2{
+    font-size: 20px;
+    padding-bottom: 15px;
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.sidebar .temas li,
+.sidebar .interes li{list-style: none; text-align: center;}
+
+.sidebar .temas li:after{
+    content: ' ';
+    display: block;
+    width: 18%;
+    height: 1px;
+    border-top: 2px solid #CCCCCC;
+    margin: 12px auto;
+}
+
+.sidebar .interes li:after{
+    content: ' ';
+    display: block;
+    width: 18%;
+    height: 1px;
+    margin: 6px auto;
+}
+
+.sidebar .temas li:last-child:after,
+.sidebar .interes a:last-child:after{display: none;}
+
+.sidebar .temas li:before{
+    content: ' ';
+    background: url('img/iconosmenusidebar.png');
+    width: 19px;
+    height: 19px;
+    vertical-align: sub;
+    margin-right: 8px;
+    display: inline-block;
+    transition: ease 0.3s;
+}
+
+.sidebar .temas #nuestro-hotel:before{background-position: 0px 0px;}
+.sidebar .temas #habitaciones:before{background-position: -20px 0px;}
+.sidebar .temas #actividades:before{background-position: -40px 0px;}
+.sidebar .temas #como-llegar:before{background-position: -60px 0px;}
+.sidebar .temas #contacto:before{background-position: -80px 0px;}
+.sidebar .temas #index:before{background-position: -100px 0px;}
+
+.sidebar .temas #nuestro-hotel:hover:before{background-position: 0px -19px;}
+.sidebar .temas #habitaciones:hover:before{background-position: -20px -19px;}
+.sidebar .temas #actividades:hover:before{background-position: -40px -19px;}
+.sidebar .temas #como-llegar:hover:before{background-position: -60px -19px;}
+.sidebar .temas #contacto:hover:before{background-position: -80px -19px;}
+.sidebar .temas #index:hover:before{background-position: -100px -19px;}
+
+.sidebar .temas li a,
+.sidebar .interes a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #1F1F1F;
+    letter-spacing: 0.0px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.sidebar .interes li:before{
+    content: ' ';
+    background: url('img/iconosinteres.png');
+    vertical-align: text-bottom;
+    width: 19px;
+    height: 19px;
+    vertical-align: sub;
+    margin-right: 8px;
+    display: inline-block;
+    transition: ease 0.3s;
+}
+
+.sidebar .interes .aeropuerto:before{background-position: 0px 0px;}
+.sidebar .interes .estaciontren:before{background-position: -20px 0px;}
+.sidebar .interes .estacionbus:before{background-position: -40px 0px;}
+.sidebar .interes .metro:before{background-position: -60px 0px;}
+.sidebar .interes .rober:before{background-position: -80px 0px;}
+.sidebar .interes .turismo:before{background-position: -100px 0px;}
+.sidebar .interes .plano:before{background-position: -120px 0px;}
+
+.sidebar #slider{height: 300px;}
+.sidebar #titular_slider{font-size: 1em;}
+.sidebar #slider{background: url('img/desc2.jpg') 50% 50% / cover no-repeat;;}
+
+.sidebar .wrapper-slider{padding: 0px 30px;}
+
+.sidebar .contacto{
+    font-size: 13px;
+    margin: 0 20px;
+}
+/* --------------------------------------------*/
+/*                     HOME                    */
+/* --------------------------------------------*/
+
+
+.oscuro{background: #F7F7F7; padding: 50px 2%;}
+.claro{background: white; padding: 50px 2%;}
+
+.fila1 .cubiertacolor.negro{
+    background: rgba(0, 0, 0, 0.65);
+    width: 100%;
+    height: 100%;
+}
+
+#slider .cubiertacolor.negro{background: rgba(0, 0, 0, 0.55);}
+
+.fila1.home {
+	width:100%;
+	background: url('img/principal.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 410px;
+}
+
+.fila1 div{
+    height: 85%;
+    display: table;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.fila1 .titular{
+    color: white;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    font-size: 30px;
+}
+
+#slider{-webkit-transition: background-image 0.2s ease-in-out;transition: background-image 0.2s ease-in-out;}
+#enlace_slider{text-decoration:none;}
+
+.fila1 .titular{display: table-cell; vertical-align: middle;}
+
+.fila1.home .titular:after{
+    display: inline-block;
+    border-top: 2px solid white;
+    content: ' ';
+    width: 100%;
+    transition: ease 0.3s;
+}
+
+#slider:hover .titular:after{
+    border-top: 2px solid #DCAE06;
+}
+
+.fila2.home .descripcion,
+.fila2.home .fotos{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fila2 .descripcion{
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    letter-spacing: 0.2px;
+    text-align: center;
+    line-height: 25px;
+}
+
+.fila2.home .descripcion{
+    width: 58%;
+    margin-left: 3%;
+    text-align: left;
+}
+.fila2.home .descripcion a{color: #c99f07; text-decoration: none;}
+.fila2.home .fotos{width: 38%; text-align: right;}
+.fila2.home .fotos img{width: 47%; margin: 5px;}
+
+
+.fila3.home .infohabitaciones,
+.fila3.home .infoservicios{
+    width: 45%;
+    display: inline-block;
+    text-align: center;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.1px;
+}
+
+.fila3.home .infohabitaciones{padding-right: 2%; border-right: 1px solid #bcbcbc;}
+.fila3.home .infoservicios{padding-left: 2%;}
+.fila3.home{padding-bottom: 0px;}
+
+.fila4.home .actividad{
+    display: inline-block;
+    width: 45%;
+    padding: 0px 2%; 
+    text-align: center;
+    margin-top: 35px;
+}
+.fila4.home .actividad img{width: 225px; border-radius: 20px;}
+
+.fila4.home p{
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+    margin: 25px auto 25px auto;
+}
+
+.fila4.home .boton{padding: 6px 32%;}
+
+
+/* --------------------------------------------*/
+/*                NUESTRO HOTEL                */
+/* --------------------------------------------*/
+
+.fila1 {
+	width:100%;
+	background: url('img/principalnuestrohotel.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 300px;
+}
+.fila1 h1 img{display: block; margin: 0 auto;}
+
+.fila2.nuestro-hotel{margin: 50px 0;}
+
+#listaservicios{
+    width: 100%;
+    display: block;
+    list-style: none;
+    border-top: 2px solid #c99f07;
+    border-bottom: 2px solid #c99f07;
+    text-align: center;
+    font-size: 14px;
+    margin: 25px 0px;
+}
+#listaservicios ul{list-style: none; padding: 10px 0;}
+#listaservicios li{display: inline-block; padding: 0px 20px;}
+#listaservicios li img{display: block; margin: 0 auto; margin-bottom: 15px;}
+
+.fila3 .fotos{margin-top: 15px; text-align: center;}
+.fila3 .fotos img{ display: inline-block; width: 18%; margin: 1% 1%;}
+
+.fila4{margin: 50px 0;}
+.fila4 img{margin: 0 auto; display: block;}
+.fila4 p{
+    display: inline-block;
+    font-size: 15px;
+    vertical-align: middle;
+    letter-spacing: 0.2px;
+    width: 70%;
+    text-align: center;
+    line-height: 25px;
+    display: block;
+    margin: 0 auto;
+}
+
+
+/* --------------------------------------------*/
+/*                HABITACIONES                 */
+/* --------------------------------------------*/
+
+.fila1.habitaciones{
+	width:100%;
+	background: url('img/principalhabitaciones.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 350px;
+}
+
+.fila2.habitaciones{margin: 50px 0;}
+
+.tiraproductos{text-align: center;}
+.tiraproductos .productotipo{display: inline-block; width: 29%; margin: 0 2%; margin-top: 30px; vertical-align: top;}
+.tiraproductos .productotipo img{display: block; width: 100%; border-radius: 20px;}
+.tiraproductos .productotipo h3{margin-top: 20px;}
+.tiraproductos .productotipo p {
+    font-size: 15px;
+    width: 80%;
+    margin: 0 auto;
+    margin: 0px auto 25px auto;
+}
+
+.etiquetaprecio {
+    background: #969595;
+    display: inline-block;
+    padding: 10px 24px;
+    font-size: 19px;
+    color: #FFF;
+    margin: 25px 0px;
+    border-radius: 20px;
+}
+
+/* --------------------------------------------*/
+/*                 HABITACIÓN                  */
+/* --------------------------------------------*/
+
+.fila1.habitacion{height: 220px;}
+.fila2.habitacion{margin-top: 30px;}
+.fila2.habitacion .descripcion,
+.fila2.habitacion .habitacionimg{display: inline-block;vertical-align: middle; text-align: right;}
+
+.fila2.habitacion .calltocompra{margin-top: 15px;}
+
+.fila2.habitacion .habitacionimg{width: 50%;}
+.fila2.habitacion .descripcion{border-radius: 20px; width: 44%; margin-right: 5%;}
+
+.fila2.habitacion .etiquetaprecio,
+.fila2.habitacion .boton{display: inline-block;text-align: center;}
+
+.fila2.habitacion .boton{display: inline-block;width: 22%;margin-left: 8%;vertical-align: middle;}
+
+.fila3.habitacion #listaservicios{margin-top: 50px;}
+
+.fila4.habitacion {margin-top: 50px; margin-bottom: 0px;}
+.fila4 .fotos{margin-top: 15px; text-align: center;}
+.fila4.habitacion .fotos img{max-height: 135px;}
+.fila4 h2{margin-bottom: 25px;}
+.fila4 .fotos img{ display: inline-block; width: 20%; margin: 1% 1%; }
+
+/* --------------------------------------------*/
+/*                 ACTIVIDADES                 */
+/* --------------------------------------------*/
+
+.fila1.actividades{
+	width:100%;
+	background: url('img/principalactividades.png') no-repeat center center fixed;
+	background-size: cover;
+	height: 350px;
+}
+
+/* --------------------------------------------*/
+/*                 COMO LLEGAR                 */
+/* --------------------------------------------*/
+
+.fila1.como-llegar{
+	background: url('img/principalllegar.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 350px;
+}
+.fila2.como-llegar{margin: 50px 0;}
+.fila3.como-llegar iframe{display: block; margin: 0 auto; width: 100%;}
+
+
+/* --------------------------------------------*/
+/*                   CONTACTO                  */
+/* --------------------------------------------*/
+
+.fila1.contacto{
+	background: url('img/principalcontacto.jpg') no-repeat center center fixed;
+	background-size: cover;
+	height: 350px;
+}
+
+.fila2.contacto{margin: 50px 0px;}
+.fila2.contacto .descripcion,
+.fila2.contacto .fotos{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.fila2.contacto .descripcion{width: 44%; margin-right: 3%; text-align: right;}
+.fila2.contacto .descripcion a{color: #c99f07; text-decoration: none;}
+.fila2.contacto .fotos{width: 35%; text-align: right;}
+.fila2.contacto .descripcion h3{text-align: right; margin-right: 0px;}
+.fila2.contacto .fotos img{width: 100%; margin: 5px;}
+
+/* FORMULARIO */
+
+.contacto form{display: block; margin: 0 auto;text-align: center;}
+.contacto form label{
+    font-size: 14px;
+    margin-bottom: 1px;
+    display: block;
+}
+
+.contacto form input{
+    font-size: 18px;
+    padding: 8px 0px;
+    text-align: center;
+    border: 1px solid #a0a0a0;
+    width: 60%;
+    margin: 11px 0px;
+    margin-bottom: 31px;
+}
+
+.contacto form textarea{
+    display: block;
+    width: 60%;
+    font-size: 18px;
+    margin: 0 auto;
+    margin-bottom: 17px;
+    margin-top: 13px;
+    text-align: center;
+    max-width: 59%;
+    border: 1px solid #a0a0a0;
+}
+.contacto form .submit{
+    font-family: 'Noto Serif';
+    background: #FCFCFC;
+    border: 1px solid grey;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.contacto form .submit:hover{
+    border: 1px solid #DCAE06;
+}
+
+.contacto .campoerror {background: #ffc4c4;}
+
+.contacto #erroresformulario{
+	text-align: center;
+	margin-top: 16px;
+	font-size: 14px;
+	color: red;
+}
+
+/* --------------------------------------------*/
+/*                 RESPONSIVE                  */
+/* --------------------------------------------*/
+
+@media (max-width: 800px) {
+    #principal,
+    #sidebar {width:100%;}
+}

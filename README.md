@@ -1,4 +1,4 @@
-# Sistema Solar en 3D
+# Prácticas SIBW - Web para un hotel
 Prácticas para la Asignatura Sistemas de Información Basados en Web (SIBW) de la Universidad de Granada. Se trata de una recreación de una página web para un hotel. En la práctica se usa HTML, JavaScript, CSS y PHP.
 
 Este trabajo también me sirvió para poner en práctica mis conocimientos de diseño de interfaces de usuario. Puedes ver más detalles del diseño de la web en Behance: https://www.behance.net/gallery/40642849/Hotel-Plaza-Nueva
